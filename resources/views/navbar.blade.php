@@ -45,10 +45,10 @@
                 </ul>
             </div>
         <li>
-          <a href="#" class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent hover:text-white">Tentang Kami</a>
+          <a href="https://www.instagram.com/schematics.its/" class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent hover:text-white">Tentang Kami</a>
         </li>
         <li>
-          <a href="#" class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent hover:text-white">Merch</a>
+          <a href="https://schemastore.carrd.co/?fbclid=PAZXh0bgNhZW0CMTEAAaZgThwdvr25aolQ5_B2S-iD72KPUyPSetmLAsYTDSTRVl6gLJTIPPAGL1g_aem_8MR6ra-HYmf4WIoqD_DPlA" class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent hover:text-white">Merch</a>
         </li>
         <li>
           <a href="/tickets" class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent hover:text-white">Tickets</a>
