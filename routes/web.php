@@ -22,7 +22,11 @@ Route::post('/logout', function () {
 })->name('logout');
 
 Route::get('/tickets', function () {
-    return view('tickets.ticket'); 
+    return view('tickets.desc'); 
+});
+
+Route::get('/buy', function () {
+    return view('tickets.buy'); 
 });
 
 Route::get('/', function () {
