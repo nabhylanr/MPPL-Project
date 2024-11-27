@@ -21,6 +21,10 @@ Route::post('/logout', function () {
     return redirect('/login');
 })->name('logout');
 
+Route::get('/tickets', function () {
+    return view('tickets.ticket'); 
+});
+
 Route::get('/', function () {
     return view('/register');
 });

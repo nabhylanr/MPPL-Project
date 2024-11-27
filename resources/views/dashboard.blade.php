@@ -21,6 +21,12 @@
             font-weight: normal;
             font-style: normal;
         }
+        @font-face {
+            font-family: 'Poppins';
+            src: url('/fonts/Poppins.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
 
         body {
             margin: 0;  
@@ -40,14 +46,13 @@
 
     <div class="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center text-center">
         <h1 class="text-[50px] font-bold text-[#342473] mb-4"
-            style="font-family: 'LemonMilkBold', sans-serif; line-height: 1.25; letter-spacing: 1%;"
-            data-aos="fade-up" data-aos-delay="500">
+            style="font-family: 'LemonMilkBold', sans-serif; line-height: 1.25; letter-spacing: 1%;">
             REVOLUTIONARY <br>
             ENTERTAINMENT AND<br>
             EXPO WITH VARIOUS ARTS
         </h1>
 
-        <div class="flex items-center justify-center w-full mt-4 px-4" data-aos="fade-up" data-aos-delay="500">
+        <div class="flex items-center justify-center w-full mt-4 px-4">
             <div class="flex-grow h-[1px] bg-[#342473] mr-2"></div>
             <p class="text-[18px] text-[#342473]" 
                style="font-family: 'LemonMilkRegular', sans-serif; line-height: 1.25; letter-spacing: 1%;">
@@ -57,13 +62,23 @@
         </div>
     </div>
 
-    <div class="relative mt-[950px] text-left pl-[700px]" data-aos="fade-up" data-aos-delay="100">
+    <div class="relative mt-[1000px] text-left pl-[700px]" data-aos="fade-up" data-aos-delay="100">
         <p class="text-[45px] text-white" 
            style="font-family: 'LemonMilkBold', sans-serif;">
             SENI
         </p>
-        <p class="text-white">
+        <p class="text-white" style="font-family: 'Poppins', sans-serif;">
             REEVA Exhibition menghadirkan pameran seni dengan konsep unik dan modern, menampilkan keindahan seni dalam berbagai medium yang memukau. Setiap instalasi dirancang untuk menciptakan ruang apresiasi yang dinamis dan interaktif, memberikan pengalaman visual yang tak terlupakan bagi pengunjung.
+        </p>
+    </div>
+
+    <div class="relative mt-[300px] text-right pr-[600px]" data-aos="fade-up" data-aos-delay="100">
+        <p class="text-[45px] text-white" 
+            style="font-family: 'LemonMilkBold', sans-serif;">
+            TEKNOLOGI
+        </p>
+        <p class="text-white" style="font-family: 'Poppins', sans-serif;">
+            Pameran ini juga menggandeng tim robotik ITS dan laboratorium riset, mengusung teknologi canggih yang mengubah cara pengunjung berinteraksi dengan karya seni. Kolaborasi ini memperlihatkan bagaimana seni dan teknologi bersinergi untuk menciptakan pengalaman yang inspiratif dan edukatif.
         </p>
     </div>
 </body>
