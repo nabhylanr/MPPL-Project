@@ -30,5 +30,5 @@ Route::get('/buy', function () {
 });
 
 Route::get('/', function () {
-    return view('/register');
+    return view('auth.login');
 });
