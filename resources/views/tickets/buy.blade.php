@@ -25,11 +25,11 @@
                 <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
                     <p class="text-sm font-medium text-gray-800 mb-1">Jenis Tiket</p>
                     <p class="text-sm text-gray-600">Schematics REEVA 2024 - 17 November 2024</p>
-                    <p class="text-sm text-gray-600">Rp26.000 x ticketQuantity</p>
+                    <p class="text-sm text-gray-600">Rp26.000 x <span id="quantityDisplay">1</span></p>
                     <div class="flex items-center mt-2">
-                        <button onclick="updateQuantity(-1)" class="px-1 py-0.5 text-white bg-red-500 rounded-sm text-xs hover:bg-red-600 focus:outline-none focus:ring focus:ring-red-300">-</button>
+                        <button onclick="updateQuantity(-1)" class="w-5 h-5 flex items-center justify-center border border-red-500 text-red-500 rounded-full text-[10px] hover:bg-red-500 hover:text-white focus:outline-none focus:ring focus:ring-red-300">-</button>
                         <span id="ticketQuantity" class="mx-4 text-gray-800">1</span>
-                        <button onclick="updateQuantity(1)" class="px-1 py-0.5 text-white bg-blue-500 rounded-sm text-xs hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-300">+</button>
+                        <button onclick="updateQuantity(1)" class="w-5 h-5 flex items-center justify-center border border-blue-500 text-blue-500 rounded-full text-[10px] hover:bg-blue-500 hover:text-white focus:outline-none focus:ring focus:ring-blue-300">+</button>
                     </div>
                 </div>
             </div>
@@ -48,7 +48,7 @@
                     <hr class="my-2">
                     <div class="flex justify-between font-bold text-gray-800">
                         <span>Total Bayar</span>
-                        <span>Rp26.000</span>
+                        <span id="totalBayar">Rp26.000</span>
                     </div>
                 </div>
                 <div class="mb-4">
@@ -171,7 +171,9 @@
             if (quantity < 1) quantity = 1; 
             const totalPrice = ticketPrice * quantity;
             document.getElementById('ticketQuantity').textContent = quantity;
-            document.getElementById('ticketPrice').textContent = `Rp${(ticketPrice * quantity).toLocaleString()} x ${quantity}`;
+            document.getElementById('quantityDisplay').textContent = quantity;
+            document.getElementById('totalTicketPrice').textContent = `Rp${totalPrice.toLocaleString()}`;
+            document.getElementById('totalBayar').textContent = `Rp${totalPrice.toLocaleString()}`;
         }
     </script>
 </body>
